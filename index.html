@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto">
+</head>
+<body>
+  
+  <main class="container">
+    <!-- Sign-up form start -->
+    <section class="write-ups">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+      <ul>
+        <li class="list">Product discovery and building what matters</li>
+      <li class="list">Measuring to ensure updates are a success</li>
+      <li class="list">And much more!</li>
+      </ul>
+
+      <form action="" get autocomplete="on" name="Email-form">
+        <label for="Email">Email address</label><br>
+        <input type="email" id="Email" placeholder="email@company.com
+        " >
+      </form>
+
+      <button id="submit"> Subscribe to monthly newsletter
+      </button>
+    </section>
+
+    <aside class="image">
+      <picture>
+        <source media="(min-width:1200px)" srcset="assets/images/illustration-sign-up-desktop.svg" id="size">
+        <source media="(min-width:1100px)" srcset="assets/images/illustration-sign-up-mobile.svg">
+        <img src="assets/images/illustration-sign-up-mobile.svg" alt="">
+      </picture>
+    </aside>
+  
+  
+
+  
+
+  <!-- Sign-up form end -->
+
+  
+  </main>
+
+  <!-- Success message start -->
+  <div class="success-message">
+    <img src="assets/images/icon-success.svg" alt="">
+    <h1>Thanks for subscribing!</h1>
+    <p>
+      A confirmation email has been sent to <span></span> 
+  Please open it and click the button inside to confirm your subscription.
+    </p>
+
+    <button id="Dismiss"><a href="index.html">Dismiss message</a></button>
+  </div>
+
+
+  
+
+  <!-- Success message end -->
+  
+  
+<script src="app.js"></script>
+</body>
+</html>

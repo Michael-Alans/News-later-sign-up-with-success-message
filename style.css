@@ -1,0 +1,167 @@
+:root {
+--DarkSlateGrey: hsl(234, 29%, 20%);
+--CharcoalGrey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+}
+
+body {
+    margin-right: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    background-color: var(--CharcoalGrey);
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container  {
+    max-width: 900px;
+    width: 70%;
+    border-radius: 30px;
+    background-color: var(--White);
+    display: flex;
+}
+
+
+.write-ups {
+    
+    padding: 70px 50px;
+}
+
+.write-ups h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.write-ups p {
+    font-weight: 500;
+    color: var(--CharcoalGrey);
+}
+
+.write-ups img {
+    margin-right: 10px;
+}
+
+ul {
+    margin: 0;
+}
+
+
+ul li {
+    font-weight: 500;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    list-style-image: url(assets/images/icon-list.svg);
+    color: var(--CharcoalGrey);
+}
+
+.image {
+    padding: 20px;
+}
+
+.image img {
+    min-width: 100%;
+    height: auto;
+}
+
+form {
+    margin-top: 30px;
+}
+
+label {
+    font-weight: 700;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid var(--Grey);
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+input :placeholder-shown {
+    font-weight: 700;
+    content: var(--CharcoalGrey);
+}
+
+#submit {
+    width: 100%;
+    padding: 18px;
+    background-color: var(--DarkSlateGrey);
+    border-radius: 10px;
+    color: var(--White);
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+}
+
+#submit:hover {
+    background:linear-gradient( to right, rgb(228, 51, 81),rgb(226, 47, 23)
+    );
+}
+
+@media  (max-width:1300px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+}
+
+@media  (max-width:1300px) {
+    .container {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+.success-message {
+    display: none;
+    max-width: 300px;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: var(--White);
+}
+
+.success-message h1 {
+    font-weight: 700;
+}
+
+.success-message h1 p {
+    color: var(--CharcoalGrey);
+    font-weight: 500;
+}
+
+input[type="email"][value] {
+    font-weight: 500;
+    color: #000000;
+}
+
+#Dismiss {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background:linear-gradient( to right, rgb(228, 51, 81),rgb(226, 47, 23)
+    );
+}
+
+span {
+    font-weight: 700;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--White);
+}
