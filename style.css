@@ -31,12 +31,13 @@ body {
 
 .write-ups {
     
-    padding: 70px 50px;
+    padding: 5rem 2rem;
 }
 
 .write-ups h1 {
     font-weight: 700;
     font-size: 2.5rem;
+    word-wrap: none;
 }
 
 .write-ups p {
@@ -44,13 +45,8 @@ body {
     color: var(--CharcoalGrey);
 }
 
-.write-ups img {
-    margin-right: 10px;
-}
 
-ul {
-    margin: 0;
-}
+
 
 
 ul li {
@@ -68,7 +64,7 @@ ul li {
 }
 
 .image img {
-    min-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -116,11 +112,25 @@ input :placeholder-shown {
     }
 }
 
+
+
+@media  (max-width:1300px) {
+     .image {
+        width: 100%;
+    }
+}
+
 @media  (max-width:1300px) {
     .container {
         width: 100%;
         border-radius: 0;
     }
+}
+
+#email-error-message {
+    color: red;
+    visibility: hidden;
+    float: right;
 }
 
 .success-message {

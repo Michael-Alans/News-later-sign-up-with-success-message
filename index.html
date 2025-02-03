@@ -26,21 +26,20 @@
       <li class="list">And much more!</li>
       </ul>
 
-      <form action="" get autocomplete="on" name="Email-form">
-        <label for="Email">Email address</label><br>
+      <form action="" get autocomplete="on" id="form">
+        <label for="Email">Email address</label> <span aria-live="polite" id="email-error-message">Valid email required</span><br>
         <input type="email" id="Email" placeholder="email@company.com
         " >
+        <button type="submit" id="submit">Subscribe to monthly newsletter</button>
       </form>
 
-      <button id="submit"> Subscribe to monthly newsletter
-      </button>
     </section>
 
     <aside class="image">
       <picture>
         <source media="(min-width:1200px)" srcset="assets/images/illustration-sign-up-desktop.svg" id="size">
-        <source media="(min-width:1100px)" srcset="assets/images/illustration-sign-up-mobile.svg">
-        <img src="assets/images/illustration-sign-up-mobile.svg" alt="">
+        <source media="(min-width:1100px)" srcset="assets/images/illustration-sign-up-mobile.svg" >
+        <img src="assets/images/illustration-sign-up-mobile.svg" alt="" id="size">
       </picture>
     </aside>
   
@@ -58,7 +57,7 @@
     <img src="assets/images/icon-success.svg" alt="">
     <h1>Thanks for subscribing!</h1>
     <p>
-      A confirmation email has been sent to <span></span> 
+      A confirmation email has been sent to <span id="second-span"></span> 
   Please open it and click the button inside to confirm your subscription.
     </p>
 
